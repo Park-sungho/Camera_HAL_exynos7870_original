@@ -61,7 +61,7 @@ LOCAL_SRC_FILES += \
 	dv_timings.c
 LOCAL_CFLAGS += -DUSE_DV_TIMINGS
 endif
-
+LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libhdmi
 include $(BUILD_SHARED_LIBRARY)

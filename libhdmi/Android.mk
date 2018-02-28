@@ -46,7 +46,7 @@ LOCAL_ADDITIONAL_DEPENDENCIES := \
 
 LOCAL_SRC_FILES := \
 	ExynosExternalDisplay.cpp dv_timings.c
-
+LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libhdmi
 include $(BUILD_SHARED_LIBRARY)

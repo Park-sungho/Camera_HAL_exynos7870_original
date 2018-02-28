@@ -93,7 +93,7 @@ ifeq ($(BOARD_USES_VIRTUAL_DISPLAY), true)
 	LOCAL_STATIC_LIBRARIES := libsecurepath
 	LOCAL_SRC_FILES += ExynosG2DWrapper.cpp
 endif
-
+LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libhwcutils
 include $(BUILD_SHARED_LIBRARY)
