@@ -64,6 +64,12 @@ common_exynos_dirs += \
 	libg2d
 endif
 
+#shpark, Add the OEM HAL library
+ifeq ($(BOARD_OEM_CAMERA_LIBRARY), true)
+common_exynos_dirs += \
+	libpreview
+endif
+
 include $(call all-named-subdir-makefiles,$(common_exynos_dirs))
 
 endif
