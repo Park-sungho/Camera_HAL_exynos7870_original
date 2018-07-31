@@ -4,4 +4,5 @@
    - libpreview library.
    
 2. Implement to flush the preview to surface.
+   : The preview buffer displays by Gralloc.
    - ./libpreview/FlushPreview
