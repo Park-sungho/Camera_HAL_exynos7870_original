@@ -11,7 +11,7 @@ SecCameraHardware::~SecCameraHardware()
     setCamPower(mExtCamType, 0);
 }
 
-bool SecCameraHardware::nativeOEMFlushPreview(char* prev_buffer)
+bool SecCameraHardware::nativeFlushPreview(char* prev_buffer)
 {
 #if defined(FLUSH_PREVIEW_H)
     /* process the preview in HAL. */
