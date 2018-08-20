@@ -16,15 +16,14 @@ bool SecCameraHardware::nativeFlushPreview(char* prev_buffer)
 #if defined(FLUSH_PREVIEW_H)
     /* process the preview in HAL. */
     FlushPreview *flushPrev = new FlushPreview();
-
-    flushPrev->nativeDispPreview(
-                    mGrallocHal,
-                    mPrevWindow,
-                    prev_buffer,
-                    mWidth,
-                    mHeight);
+    flushPrev->flushPreview(
+                  mGrallocHal,
+                  mPrevWindow,
+                  prev_buffer,
+                  mWidth,
+                  mHeight);
 #else
-    ALOGV("%s: E, Not supported.", __FUNCTION__);
+    ALOGV("%s: is not supported.", __FUNCTION__);
 #endif
     return true;
 }
